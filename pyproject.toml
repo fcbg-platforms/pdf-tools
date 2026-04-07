@@ -7,7 +7,7 @@ name = "pdf-tools"
 version = "0.1.0"
 description = "A variety of Python PDF tools"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.11"
 license = { text = "GPL" }
 authors = [
   { name = "Gwenael Birot", email = "gbirot@gmail.com" }
