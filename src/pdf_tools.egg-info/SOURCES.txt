@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/pdf_merger/__init__.py
+src/pdf_merger/core.py
+src/pdf_tools.egg-info/PKG-INFO
+src/pdf_tools.egg-info/SOURCES.txt
+src/pdf_tools.egg-info/dependency_links.txt
+src/pdf_tools.egg-info/requires.txt
+src/pdf_tools.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: pdf-tools
+Version: 0.1.0
+Summary: A variety of Python PDF tools
+Author-email: Gwenael Birot <gbirot@gmail.com>
+License: GPL
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pypdf>=6.9.2
+Dynamic: license-file
+
+# pdf-tools
+A variety a python PDF tools

@@ -2,7 +2,7 @@ from pathlib import Path
 from pypdf import PdfWriter, PdfReader
 
 
-def merge_pdf(pdf_list: list[str|Path] = None,
+def merge_from_list(pdf_list: list[str|Path] = None,
               output: str|Path = 'output.pdf') -> None:
     
     """
@@ -30,8 +30,8 @@ def merge_pdf(pdf_list: list[str|Path] = None,
         writer.write(f)
 
 
-def merge_in_path(pdf_path: str|Path, template_pdf: list[str|Path]|str|Path,
-                  output_path: str|Path = None, suffix: str = None) -> None:
+def merge_each_from_path(pdf_path: str|Path, template_pdf: list[str|Path]|str|Path,
+                         output_path: str|Path = None, suffix: str = None) -> None:
     
     """
     Merge each PDF in a folder with fixed given PDFs.
@@ -71,27 +71,5 @@ def merge_in_path(pdf_path: str|Path, template_pdf: list[str|Path]|str|Path,
         pdf_list = [pdf] + template_pdf
         
         output = output_path / f"{pdf.with_suffix('').name}{suffix}.pdf"
-        merge_pdf(pdf_list, output)
+        merge_from_list(pdf_list, output)
     
-
-if __name__ == "__main__":
-    
-    # folder where PDFs to merge with the template are stored
-    folder = './PDF_test'
-    
-    # output folder of merged PDFs - None if same as input folder
-    output = './merged_pdf'
-    
-    # templates to merge to each PDF
-    template = ['./FCBG_MEG_Operational_costs_2026.pdf',
-                './FCBG_CSR_Operational_costs_2026.pdf']
-    
-    # suffix to append to the merged filename - None if no suffix
-    suffix = '_w_FNS_grid'
-    
-    
-    # merge PDFs
-    merge_in_path(pdf_path = folder,
-                  template_pdf = template,
-                  output_path = output,
-                  suffix = suffix)
