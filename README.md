@@ -1,10 +1,20 @@
 # pdf-tools
 A variety a python PDF tools
 
-# Example
+## Installation
+
+Install using pip:
+
+```bash
+pip install git+https://github.com/fcbg-platforms/pdf-tools.git
+```
+
+## Example
 
 ```python
 # example to merge each PDF in a folder to templates PDF
+
+from pdf_merger import merge_each_from_path
 
 folder = './PDF_test'
 
