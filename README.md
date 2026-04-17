@@ -12,7 +12,7 @@ pip install git+https://github.com/fcbg-platforms/pdf-tools.git
 ## Example
 
 ```python
-# example to merge each PDF in a folder to templates PDF
+# example to merge each PDF in a folder with templates PDF
 
 from pdf_merger import merge_each_from_path
 
@@ -34,6 +34,8 @@ merge_each_from_path(pdf_path = folder,
                      template_pdf = template,
                      output_path = output,
                      suffix = suffix)
+                     
+# each PDF in the folder './PDF_test' has been merged with 'template_01.pdf' and 'template_02.pdf'
                      
 ```
                 
