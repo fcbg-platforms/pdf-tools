@@ -16,6 +16,7 @@ pip install git+https://github.com/fcbg-platforms/pdf-tools.git
 
 from pdf_merger import merge_each_from_path
 
+# input folder
 folder = './PDF_test'
 
 # output folder of merged PDFs - None if same as input folder
@@ -27,7 +28,6 @@ template = ['template_01.pdf',
 
 # suffix to append to the merged filename - None if no suffix
 suffix = '_w_template'
-
 
 # merge PDFs
 merge_each_from_path(pdf_path = folder,
