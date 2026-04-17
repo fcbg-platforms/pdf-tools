@@ -1,7 +1,7 @@
 # pdf-tools
 A variety a python PDF tools
 
-# Examps
+# Examples
 
 ```python
 # example to merge each PDF in a folder to templates PDF
