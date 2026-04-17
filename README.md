@@ -1,20 +1,22 @@
 # pdf-tools
 A variety a python PDF tools
 
-# Usage
+# Examps
 
 ```python
+# example to merge each PDF in a folder to templates PDF
+
 folder = './PDF_test'
 
 # output folder of merged PDFs - None if same as input folder
 output = './merged_pdf'
 
 # templates to merge to each PDF
-template = ['./FCBG_MEG_Operational_costs_2026.pdf',
-            './FCBG_CSR_Operational_costs_2026.pdf']
+template = ['template_01.pdf',
+            'template_02.pdf']
 
 # suffix to append to the merged filename - None if no suffix
-suffix = '_w_FNS_grid'
+suffix = '_w_template'
 
 
 # merge PDFs
